@@ -1,292 +1,332 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
-    <title>SatishBorkar.github.io : Demos </title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic' rel='stylesheet' type='text/css'>
+<html>
 
-    <!-- 
-    font-family: 'Josefin Slab', serif;
-    Thin 100
-    Thin 100 
-    Light 300
-    Light 300
-    Normal 400
-    Normal 400
-    Semi-Bold 600
-    Semi-Bold 600 
-    Bold 700
-    Bold 700 Italic
-    -->
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Css-filters : ">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <style type="text/css">
-        body
+    <title>Css-filters</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/satishborkar/css-filters">View on GitHub</a>
+
+          <h1 id="project_title">Css-filters</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/satishborkar/css-filters/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/satishborkar/css-filters/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>&lt;!DOCTYPE html&gt;
+
+</p>
+    
+    
+    
+    
+    
+    
+    SatishBorkar.github.io : Demos 
+    &lt;!-- Latest compiled and minified CSS --&gt;
+    
+    
+    
+
+<pre><code>&lt;!-- 
+font-family: 'Josefin Slab', serif;
+Thin 100
+Thin 100 
+Light 300
+Light 300
+Normal 400
+Normal 400
+Semi-Bold 600
+Semi-Bold 600 
+Bold 700
+Bold 700 Italic
+--&gt;
+
+&lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&gt;
+&lt;!--[if lt IE 9]&gt;
+  &lt;script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"&gt;&lt;/script&gt;
+  &lt;script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+
+&lt;style type="text/css"&gt;
+    body
+    {
+        font-family: 'Josefin Slab', serif;
+        font-weight: 400;
+        font-size: 16px !important;
+    }
+
+    *, *:after, :before
+    {
+        -moz-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+        -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+        -moz-animation-fill-mode: forwards;
+        -o-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    pre{
+        background:#1e1e1e;
+        border-color:#1e1e1e;
+        color:#d7ba7d;
+    }
+
+    .navbar-default
+    {
+        background: #c7254e;
+        color: #fff;
+    }
+
+        .navbar-default .navbar-brand
         {
-            font-family: 'Josefin Slab', serif;
-            font-weight: 400;
-            font-size: 16px !important;
-        }
-
-        *, *:after, :before
-        {
-            -moz-transition: all .3s ease-out;
-            -o-transition: all .3s ease-out;
-            -webkit-transition: all .3s ease-out;
-            transition: all .3s ease-out;
-            -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
-            -moz-animation-fill-mode: forwards;
-            -o-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-        }
-
-        pre{
-            background:#1e1e1e;
-            border-color:#1e1e1e;
-            color:#d7ba7d;
-        }
-
-        .navbar-default
-        {
-            background: #c7254e;
             color: #fff;
+            font-weight: 700;
+            font-size: 25px;
         }
 
-            .navbar-default .navbar-brand
+            .navbar-default .navbar-brand:hover,
+            .navbar-default .navbar-brand:focus
             {
                 color: #fff;
-                font-weight: 700;
-                font-size: 25px;
+                text-decoration: line-through;
             }
 
-                .navbar-default .navbar-brand:hover,
-                .navbar-default .navbar-brand:focus
-                {
-                    color: #fff;
-                    text-decoration: line-through;
-                }
+    .filter-grayscale
+    {
+        -webkit-filter: grayscale(1);
+        -moz-filter: grayscale(1);
+        -ms-filter: grayscale(1);
+        filter: grayscale(1);
+    }
 
-        .filter-grayscale
-        {
-            -webkit-filter: grayscale(1);
-            -moz-filter: grayscale(1);
-            -ms-filter: grayscale(1);
-            filter: grayscale(1);
-        }
+    .filter-sepia
+    {
+        -webkit-filter: sepia(1);
+        -moz-filter: sepia(1);
+        -ms-filter: sepia(1);
+        filter: sepia(1);
+    }
 
-        .filter-sepia
-        {
-            -webkit-filter: sepia(1);
-            -moz-filter: sepia(1);
-            -ms-filter: sepia(1);
-            filter: sepia(1);
-        }
+    .filter-blur
+    {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
 
-        .filter-blur
-        {
-            -webkit-filter: blur(4px);
-            -moz-filter: blur(4px);
-            -ms-filter: blur(4px);
-            filter: blur(4px);
-        }
+    .filter-invert
+    {
+        -webkit-filter: invert(1);
+        -moz-filter: invert(1);
+        -ms-filter: invert(1);
+        filter: invert(1);
+    }
 
-        .filter-invert
-        {
-            -webkit-filter: invert(1);
-            -moz-filter: invert(1);
-            -ms-filter: invert(1);
-            filter: invert(1);
-        }
+    .filter-brightness{
+        -webkit-filter: brightness(50%);
+        -moz-filter: brightness(50%);
+        -ms-filter: brightness(50%);
+        filter: brightness(50%);
+    }
 
-        .filter-brightness{
-            -webkit-filter: brightness(50%);
-            -moz-filter: brightness(50%);
-            -ms-filter: brightness(50%);
-            filter: brightness(50%);
-        }
+    .filter-shadow{
+        -moz-filter: drop-shadow(4px 4px 4px #000);
+        -ms-filter: drop-shadow(4px 4px 4px #000);
+        filter: drop-shadow(4px 4px 4px #000);
+    }
 
-        .filter-shadow{
-            -moz-filter: drop-shadow(4px 4px 4px #000);
-            -ms-filter: drop-shadow(4px 4px 4px #000);
-            filter: drop-shadow(4px 4px 4px #000);
-        }
+    .filter-shadow-02{
+        -moz-filter: drop-shadow(0 0 4px #000);
+        -ms-filter: drop-shadow(0 0 4px #000);
+        filter: drop-shadow(0 0 4px #000);
+    }
 
-        .filter-shadow-02{
-            -moz-filter: drop-shadow(0 0 4px #000);
-            -ms-filter: drop-shadow(0 0 4px #000);
-            filter: drop-shadow(0 0 4px #000);
-        }
+    .filter-saturate{
+        -webkit-filter: saturate(50%);
+        -moz-filter: saturate(50%);
+        -ms-filter: saturate(50%);
+        filter: saturate(50%);
+    }
 
-        .filter-saturate{
-            -webkit-filter: saturate(50%);
-            -moz-filter: saturate(50%);
-            -ms-filter: saturate(50%);
-            filter: saturate(50%);
-        }
-
-        .filter-hue-rotate{
-            -webkit-filter: hue-rotate(90deg);
-            -moz-filter: hue-rotate(90deg);
-            -ms-filter: hue-rotate(90deg);
-            filter: hue-rotate(90deg);
-        }
-            
-
-        .filter-grayscale:hover,
-        .filter-sepia:hover,
-        .filter-blur:hover,
-        .filter-invert:hover,
-        .filter-brightness:hover,
-        .filter-shadow:hover,
-        .filter-shadow-02:hover,
-        .filter-saturate:hover,
-        .filter-hue-rotate:hover
-        {
-            -webkit-filter: none;
-            -moz-filter: none;
-            -ms-filter: none;
-            filter: none;
-        }
-
-        h2
-        {
-            margin: 0;
-            font-weight: 700;
-        }
-
-        dl.dl-horizontal dt,
-        dl.dl-horizontal dd
-        {
-            padding: 15px 0;
-        }
-    </style>
+    .filter-hue-rotate{
+        -webkit-filter: hue-rotate(90deg);
+        -moz-filter: hue-rotate(90deg);
+        -ms-filter: hue-rotate(90deg);
+        filter: hue-rotate(90deg);
+    }
 
 
-</head>
+    .filter-grayscale:hover,
+    .filter-sepia:hover,
+    .filter-blur:hover,
+    .filter-invert:hover,
+    .filter-brightness:hover,
+    .filter-shadow:hover,
+    .filter-shadow-02:hover,
+    .filter-saturate:hover,
+    .filter-hue-rotate:hover
+    {
+        -webkit-filter: none;
+        -moz-filter: none;
+        -ms-filter: none;
+        filter: none;
+    }
 
-<body>
+    h2
+    {
+        margin: 0;
+        font-weight: 700;
+    }
 
+    dl.dl-horizontal dt,
+    dl.dl-horizontal dd
+    {
+        padding: 15px 0;
+    }
+&lt;/style&gt;
+</code></pre>
 
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">CSS-Filters-Polyfill</a>
-            </div>
-            <!-- <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>-->
-            <!--/.nav-collapse -->
-        </div>
-    </nav>
+<p></p>
 
-    <!-- Begin page content -->
-    <div class="container">
-        <div class="col-md-12">
-            <h1>CSS 3: Filter's examples with <code>CSS-Filters-Polyfill </code></h1>
-        </div>
-        <div class="col-md-12">
-            <dl class="dl-horizontal">
-                <dt class="text-center filter-grayscale">
-                    <img src="http://schepp.github.io/CSS-Filters-Polyfill/examples/assets/picture.jpg" class="img-circle" width="160" height="160" alt="dummy Images" />
-                </dt>
-                <dd class="filter-grayscale">
-                    <h2>CSS 3 Filter : Grayscale </h2>
-                    <pre>
-.filter-grayscale{
+<p></p>
+
+<pre><code>&lt;!-- Fixed navbar --&gt;
+&lt;nav class="navbar navbar-default" role="navigation"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="navbar-header"&gt;
+            &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"&gt;
+                &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                &lt;span class="icon-bar"&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class="navbar-brand" href="#"&gt;CSS-Filters-Polyfill&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;!-- &lt;div id="navbar" class="collapse navbar-collapse"&gt;
+      &lt;ul class="nav navbar-nav"&gt;
+        &lt;li class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+          &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"&gt;Dropdown &lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;
+          &lt;ul class="dropdown-menu" role="menu"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="divider"&gt;&lt;/li&gt;
+            &lt;li class="dropdown-header"&gt;Nav header&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;--&gt;
+        &lt;!--/.nav-collapse --&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;!-- Begin page content --&gt;
+&lt;div class="container"&gt;
+    &lt;div class="col-md-12"&gt;
+        &lt;h1&gt;CSS 3: Filter's examples with &lt;code&gt;CSS-Filters-Polyfill &lt;/code&gt;&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-12"&gt;
+        &lt;dl class="dl-horizontal"&gt;
+            &lt;dt class="text-center filter-grayscale"&gt;
+                &lt;img src="http://schepp.github.io/CSS-Filters-Polyfill/examples/assets/picture.jpg" class="img-circle" width="160" height="160" alt="dummy Images" /&gt;
+            &lt;/dt&gt;
+            &lt;dd class="filter-grayscale"&gt;
+                &lt;h2&gt;CSS 3 Filter : Grayscale &lt;/h2&gt;
+                &lt;pre&gt;
+</code></pre>
+
+<p>.filter-grayscale{
     -webkit-filter:grayscale(1);
     -moz-filter:grayscale(1);
     -ms-filter:grayscale(1);
     filter:grayscale(1);
 }
-</pre>
-                </dd>
 
-                <dt class="text-center filter-sepia">
-                    <img src="http://schepp.github.io/CSS-Filters-Polyfill/examples/assets/picture.jpg" class="img-circle" width="160" height="160" alt="dummy Images" />
-                </dt>
-                <dd class="filter-sepia">
-                    <h2>CSS 3 Filter : Sepia   </h2>
-                    <pre>
-.filter-sepia{
+                </p>
+
+<pre><code>            &lt;dt class="text-center filter-sepia"&gt;
+                &lt;img src="http://schepp.github.io/CSS-Filters-Polyfill/examples/assets/picture.jpg" class="img-circle" width="160" height="160" alt="dummy Images" /&gt;
+            &lt;/dt&gt;
+            &lt;dd class="filter-sepia"&gt;
+                &lt;h2&gt;CSS 3 Filter : Sepia   &lt;/h2&gt;
+                &lt;pre&gt;
+</code></pre>
+
+<p>.filter-sepia{
     -webkit-filter:sepia(1);
     -moz-filter:sepia(1);
     -ms-filter:sepia(1);
     filter:sepia(1);
 }
-</pre>
-                </dd>
 
-                <dt class="text-center filter-blur">
-                    <img src="http://schepp.github.io/CSS-Filters-Polyfill/examples/assets/picture.jpg" class="img-circle" width="160" height="160" alt="dummy Images" />
-                </dt>
-                <dd class="filter-blur">
-                    <h2>CSS 3 Filter : Blur   </h2>
-                    <pre>
-.filter-blur{
+                </p>
+
+<pre><code>            &lt;dt class="text-center filter-blur"&gt;
+                &lt;img src="http://schepp.github.io/CSS-Filters-Polyfill/examples/assets/picture.jpg" class="img-circle" width="160" height="160" alt="dummy Images" /&gt;
+            &lt;/dt&gt;
+            &lt;dd class="filter-blur"&gt;
+                &lt;h2&gt;CSS 3 Filter : Blur   &lt;/h2&gt;
+                &lt;pre&gt;
+</code></pre>
+
+<p>.filter-blur{
     -webkit-filter:blur(4px);
     -moz-filter:blur(4px);
     -ms-filter:blur(4px);
     filter:blur(4px);
 }
-</pre>
-                </dd>
 
+                </p>
 
-                <dt class="text-center filter-invert">
-                    <img src="http://schepp.github.io/CSS-Filters-Polyfill/examples/assets/picture.jpg" class="img-circle" width="160" height="160" alt="dummy Images" />
-                </dt>
-                <dd class="filter-invert">
-                    <h2>CSS 3 Filter : Invert   </h2>
-                    <pre>
-.filter-invert{
+<pre><code>            &lt;dt class="text-center filter-invert"&gt;
+                &lt;img src="http://schepp.github.io/CSS-Filters-Polyfill/examples/assets/picture.jpg" class="img-circle" width="160" height="160" alt="dummy Images" /&gt;
+            &lt;/dt&gt;
+            &lt;dd class="filter-invert"&gt;
+                &lt;h2&gt;CSS 3 Filter : Invert   &lt;/h2&gt;
+                &lt;pre&gt;
+</code></pre>
+
+<p>.filter-invert{
     -webkit-filter:invert(1);
     -moz-filter:invert(1);
     -ms-filter:invert(1);
     filter:invert(1);
 }
-</pre>
-</dd>
-           <dt class="text-center filter-brightness">
-                    <img src="http://schepp.github.io/CSS-Filters-Polyfill/examples/assets/picture.jpg" class="img-circle" width="160" height="160" alt="dummy Images" />
+
+
+           </p><dt>
+                    <img src="http://schepp.github.io/CSS-Filters-Polyfill/examples/assets/picture.jpg" width="160" height="160" alt="dummy Images">
                 </dt>
-                <dd class="filter-brightness">
-                    <h2>CSS 3 Filter : Brightness   </h2>
+                <dd>
+                    <h2>
+<a id="css-3-filter--brightness---" class="anchor" href="#css-3-filter--brightness---" aria-hidden="true"><span class="octicon octicon-link"></span></a>CSS 3 Filter : Brightness   </h2>
                     <pre>
 .filter-brightness{
     -webkit-filter: brightness(50%);
@@ -297,96 +337,118 @@
 </pre>
 </dd>
 
-                 <dt class="text-center filter-shadow">
-                    <img src="http://schepp.github.io/CSS-Filters-Polyfill/examples/assets/picture.jpg" class="img-circle" width="160" height="160" alt="dummy Images" />
-                </dt>
-                <dd class="filter-shadow">
-                    <h2>CSS 3 Filter : Shadow   </h2>
-                    <pre>
-.filter-shadow{
+<pre><code>             &lt;dt class="text-center filter-shadow"&gt;
+                &lt;img src="http://schepp.github.io/CSS-Filters-Polyfill/examples/assets/picture.jpg" class="img-circle" width="160" height="160" alt="dummy Images" /&gt;
+            &lt;/dt&gt;
+            &lt;dd class="filter-shadow"&gt;
+                &lt;h2&gt;CSS 3 Filter : Shadow   &lt;/h2&gt;
+                &lt;pre&gt;
+</code></pre>
+
+<p>.filter-shadow{
     -webkit-filter: drop-shadow(4px 4px 4px #000);
     -moz-filter: drop-shadow(4px 4px 4px #000);
     -ms-filter: drop-shadow(4px 4px 4px #000);
     filter: drop-shadow(4px 4px 4px #000);
 }
-</pre>
-</dd>
 
-                 <dt class="text-center filter-shadow-02">
-                    <img src="http://schepp.github.io/CSS-Filters-Polyfill/examples/assets/picture.jpg" class="img-circle" width="160" height="160" alt="dummy Images" />
-                </dt>
-                <dd class="filter-shadow-02">
-                    <h2>CSS 3 Filter : Shadow - 02  </h2>
-                    <pre>
-.filter-shadow-02{
+</p>
+
+<pre><code>             &lt;dt class="text-center filter-shadow-02"&gt;
+                &lt;img src="http://schepp.github.io/CSS-Filters-Polyfill/examples/assets/picture.jpg" class="img-circle" width="160" height="160" alt="dummy Images" /&gt;
+            &lt;/dt&gt;
+            &lt;dd class="filter-shadow-02"&gt;
+                &lt;h2&gt;CSS 3 Filter : Shadow - 02  &lt;/h2&gt;
+                &lt;pre&gt;
+</code></pre>
+
+<p>.filter-shadow-02{
     -webkit-filter: drop-shadow(0 0 4px #000);
     -moz-filter: drop-shadow(0 0 4px #000);
     -ms-filter: drop-shadow(0 0 4px #000);
     filter: drop-shadow(0 0 4px #000);
 }
-</pre>
-</dd>
 
+</p>
 
-                <dt class="text-center filter-saturate">
-                    <img src="http://schepp.github.io/CSS-Filters-Polyfill/examples/assets/picture.jpg" class="img-circle" width="160" height="160" alt="dummy Images" />
-                </dt>
-                <dd class="filter-saturate">
-                    <h2>CSS 3 Filter : Saturate  </h2>
-                    <pre>
-.filter-saturate{
+<pre><code>            &lt;dt class="text-center filter-saturate"&gt;
+                &lt;img src="http://schepp.github.io/CSS-Filters-Polyfill/examples/assets/picture.jpg" class="img-circle" width="160" height="160" alt="dummy Images" /&gt;
+            &lt;/dt&gt;
+            &lt;dd class="filter-saturate"&gt;
+                &lt;h2&gt;CSS 3 Filter : Saturate  &lt;/h2&gt;
+                &lt;pre&gt;
+</code></pre>
+
+<p>.filter-saturate{
     -webkit-filter: saturate(50%);
     -moz-filter: saturate(50%);
     -ms-filter: saturate(50%);
     filter: saturate(50%);
 }
-</pre>
-</dd>
 
-                <dt class="text-center filter-hue-rotate">
-                    <img src="http://schepp.github.io/CSS-Filters-Polyfill/examples/assets/picture.jpg" class="img-circle" width="160" height="160" alt="dummy Images" />
-                </dt>
-                <dd class="filter-hue-rotate">
-                    <h2>CSS 3 Filter : Hue-Rotate  </h2>
-                    <pre>
-.filter-hue-rotate{
+</p>
+
+<pre><code>            &lt;dt class="text-center filter-hue-rotate"&gt;
+                &lt;img src="http://schepp.github.io/CSS-Filters-Polyfill/examples/assets/picture.jpg" class="img-circle" width="160" height="160" alt="dummy Images" /&gt;
+            &lt;/dt&gt;
+            &lt;dd class="filter-hue-rotate"&gt;
+                &lt;h2&gt;CSS 3 Filter : Hue-Rotate  &lt;/h2&gt;
+                &lt;pre&gt;
+</code></pre>
+
+<p>.filter-hue-rotate{
     -webkit-filter: hue-rotate(90deg);
     -moz-filter: hue-rotate(90deg);
     -ms-filter: hue-rotate(90deg);
     filter: hue-rotate(90deg);
 }
-</pre>
-</dd>
+
+</p>
+
+<pre><code>        &lt;/dl&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;footer class="footer"&gt;
+    &lt;div class="container"&gt;
+        &lt;p class="text-muted"&gt;Reference :  &lt;a href="http://schepp.github.io/CSS-Filters-Polyfill/examples/static-vs-animated/static.html" target="_blank"&gt;http://schepp.github.io/CSS-Filters-Polyfill/examples/static-vs-animated/static.html&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;
 
 
+&lt;!-- jQuery (necessary for Bootstrap's JavaScript plugins) --&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;!-- Latest compiled and minified JavaScript --&gt;
+&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
 
-            </dl>
-        </div>
+&lt;!-- for the blur effect --&gt;
+&lt;!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill --&gt;
+&lt;script&gt;
+    // this is important for IEs
+    var polyfilter_scriptpath = '/js/';
+    &lt;/script&gt;
+
+&lt;script src="js/cssParser.js"&gt;&lt;/script&gt;
+&lt;script src="js/css-filters-polyfill.js"&gt;&lt;/script&gt;
+&lt;script src="http://schepp.github.io/CSS-Filters-Polyfill/lib/cssParser.js"&gt;&lt;/script&gt;
+&lt;script src="http://schepp.github.io/CSS-Filters-Polyfill/lib/css-filters-polyfill.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>
+</p>
+      </section>
     </div>
 
-    <footer class="footer">
-        <div class="container">
-            <p class="text-muted">Reference :  <a href="http://schepp.github.io/CSS-Filters-Polyfill/examples/static-vs-animated/static.html" target="_blank">http://schepp.github.io/CSS-Filters-Polyfill/examples/static-vs-animated/static.html</a></p>
-        </div>
-    </footer>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Css-filters maintained by <a href="https://github.com/satishborkar">satishborkar</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
 
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- for the blur effect -->
-    <!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
-    <script>
-        // this is important for IEs
-        var polyfilter_scriptpath = '/js/';
-		</script>
     
-    <script src="js/cssParser.js"></script>
-	<script src="js/css-filters-polyfill.js"></script>
-    <script src="http://schepp.github.io/CSS-Filters-Polyfill/lib/cssParser.js"></script>
-    <script src="http://schepp.github.io/CSS-Filters-Polyfill/lib/css-filters-polyfill.js"></script>
-</body>
+
+  </body>
 </html>
